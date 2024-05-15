@@ -1,0 +1,83 @@
+:root {
+    --color-1: #8C0375;
+    --color-2: #C004D9;
+    --color-3: #9303A6;
+    --color-4: #5D04D9;
+    --color-5: #03318C;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-4);
+    height: 60px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    width: auto;
+    height: 100%;
+    text-align: center;
+    flex: 1;
+}
+
+/* Card Section */
+.product-section {
+    /* display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; */
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-card {
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.product-info {
+    padding: 10px;
+    display: flex;
+}
+
+.product-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.product-price {
+    font-size: 16px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.delete-icon {
+    font-size: 20px;
+    cursor: pointer;
+    justify-content: space-between;
+
+}
