@@ -1,33 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/reset.css"> 
-    <link rel="stylesheet" href="./css/style.css"> 
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
+
 <body>
     <nav class="navbar">
         <div class="logo">
             <img src="./assets/logo_header.png" alt="Title image. 3 hearts and the word aluraGeek">
         </div>
     </nav>
-    
-    <section class="product-section">
-        <h2 class="section-title">Mis Productos</h2>
-        <div class="product-card">
-            <img src="product1.jpg" alt="Producto 1">
-            <div class="product-info">
-                <h3 class="product-name">Nombre del Producto 1</h3>
-                
-                <p class="product-price">$99.99</p>
-                <span class="delete-icon">&#128465;</span>
+    <main>
+        <section class="product-section">
+            <h2 class="section-title">Mis Productos</h2>
+            <div class="card-container">
+                <div class="product-card">
+                    <img src="./assets/me.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3 class="product-name">Game Boy Classic</h3>
+                        <p class="product-price">$99.99</p>
+                        <span class="delete-icon">&#128465;</span>
+                    </div>
+                </div>
+
+            <div class="product-card">
+                <img src="./assets/me.png" alt="Producto 1">
+                <div class="product-info">
+                    <h3 class="product-name">Game Boy Classic</h3>
+                    <p class="product-price">$99.99</p>
+                    <span class="delete-icon">&#128465;</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./assets/me.png" alt="Producto 1">
+                <div class="product-info">
+                    <h3 class="product-name">Game Boy Classic</h3>
+                    <p class="product-price">$99.99</p>
+                    <span class="delete-icon">&#128465;</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./assets/me.png" alt="Producto 1">
+                <div class="product-info">
+                    <h3 class="product-name">Game Boy Classic</h3>
+                    <p class="product-price">$99.99</p>
+                    <span class="delete-icon">&#128465;</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./assets/me.png" alt="Producto 1">
+                <div class="product-info">
+                    <h3 class="product-name">Game Boy Classic</h3>
+                    <p class="product-price">$99.99</p>
+                    <span class="delete-icon">&#128465;</span>
+                </div>
             </div>
         </div>
-        <!-- Repite las siguientes dos tarjetas para los otros productos -->
-        <!-- ... -->
-    </section>
+        <!-- End of Card -->
+
+        </section>
+
+        <section class="form-section">
+            <h2 class="section-title">Agregar Producto:</h2>
+            <form>
+                <input type="text" id="nombre" class="form-input" placeholder="nombre..." required>
+
+                <input type="number" id="precio" class="form-input" placeholder="precio..." required>
+
+                <input type="file" id="imagen" class="form-input" accept="image/*" title="imagen...">
+                <label class="form-input" id="imagen-label" for="imagen">imagen...</label>
+                <br>
+                <br>
+                <button type="submit" class="form-button">Enviar</button>
+                <button type="reset" class="form-button form-button-clear">Limpiar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo-footer">
+        <img src="./assets/logo_header.png" alt="Logo" >
+    </div>
+        <p class="p-footer">DESARROLLADO POR JEAN RUIZ</p>
+        <p class="p-footer">ALURA LATAM - 2024</p>
+    </footer>
 </body>
+
 </html>
